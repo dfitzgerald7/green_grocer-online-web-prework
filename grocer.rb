@@ -55,8 +55,6 @@ def checkout(cart, coupons)
   final_cart.each do |item, hash|
     final_price += hash[:price]
   end 
-  
-  
 
   if final_price > 100 
     return final_price * 0.9 
